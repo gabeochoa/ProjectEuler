@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ main()
+comment1.params=s
+comment1.target=void\ SOP(java.lang.String)
+comment1.text=\n\ WOULD\ HAVE\ WORKED\ BUT\ JAVA\ CAN\ HOLD\ ENTIRE\ NUMBER\n\ 2^1000\n\ JAVA\:\ 1.0715086071862673E301\ \n\ \n\ WA\:\ 107150860718626732094842504906000\n\ 1810561404811705533607443750388370351\n\ 0511249361224931983788156958581275946\n\ 7291755314682518714528569231404359845\n\ 7757469857480393456777482423098542107\n\ 4605062371141877954182153046474983581\n\ 9412673987675591655439460770629145711\n\ 9647768654216766042983165262438683720\n\ 5668069376\n\ \n\ \ \ \ \ public\ static\ double\ numbers,digits,sum;\n\ \ \ \n\ \ \ \ public\ static\ void\ main()\n\ \ \ \ {\n\ \ \ \ \ \ numbers\ \=\ Math.pow(2,1000);//(2,15);\n\ \ \ \ \ \ String\ s\ \=\ ""+numbers;\n\ \ \ \ \ \ int\ len\ \=\ s.length();\n\ \ \ \ \ \ String[]\ sa\ \=\ new\ String[len];\n\ \ \ \ \ \ for(int\ i\ \=\ 0;\ i<\ len;\ i++)\n\ \ \ \ \ \ \ \ \ \ \ \ sa[i]\ \=\ s.substring(i,i+1);\n\ \ \ \ \ \ \ \ \ \ \ \ \n\ \ \ \ \ \ for(int\ i\ \=\ 0;\ i<len;\ i++)\n\ \ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ if(sa[i].equals("E"))\ \n\ \ \ \ \ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ \ \ \ break;\n\ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ \ \ if(\!sa[i].equals("."))\n\ \ \ \ \ \ \ \ \ sum\ +\=\ Double.parseDouble(sa[i]);\n\ \ \ \ \ \ \ \ \ SOP("\\n"+sa[i]);\n\ \ \ \ \ \ }\n\ \ \ \ \ \ \n\ \ \ \ \ \ SOP("\\nThe\ number\ is\:\ "+numbers);\n\ \ \ \ \ \ SOP("\\nThe\ sum\ of\ the\ digits\ is\ "+sum);\n\ \ \ \ \n\ \ \ \ }\n
+numComments=2
